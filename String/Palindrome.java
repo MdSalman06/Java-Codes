@@ -1,6 +1,10 @@
-public class Palindrome {
+import java.util.*;
+
+public class Main {
     public static void main(String[] args) {
-        String str = "madam";
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter string :");
+        String str = sc.nextLine();
         String rev = "";
 
         for (int i = str.length() - 1; i >= 0; i--) {
@@ -8,8 +12,8 @@ public class Palindrome {
         }
 
         if (str.equals(rev))
-            System.out.println("Palindrome");
+            System.out.println(str+"is Palindrome");
         else
-            System.out.println("Not Palindrome");
+            System.out.println(str+"is not Palindrome");
     }
 }
